@@ -2,34 +2,51 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 <STYle>
 #box{
+        position: relative;
     width: 700px;
     height: 450px;
     margin: auto;
     background: url(../images/mtj.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    display: flex;
+
 }
 #top-left{
     position: absolute;
-    float: left;
+    left: 0px;
 }
-#center{
-
+#top-right{
+    position: absolute;
+    right: 0px;
+}
+#bottom-left{
+    position: absolute;
+    bottom: 0px;
+}
+#bottom-right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#center-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 </STYle>
 </head>
 <body>
     <div id="box">
-        <span id="top-left">top left<span>
+        <span id="top-left">top left</span>
         <span id="top-right">top right</span>
-        <div id="center"><span>center</span></div>
-    </div>
+        <span id="bottom-left">bottom left</span>
+        <span id="bottom-right">bottom right</span>
+        <div id="center-div">center</div>
+    </div>   
 </body>
 </html>
